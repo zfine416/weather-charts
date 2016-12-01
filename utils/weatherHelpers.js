@@ -14,11 +14,11 @@ function binaryAgent(str) {
 }
 
 function getCityData (city) {
-	return axios.get('https://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + binaryAgent(binary));
+	return axios.get('api.openweathermap.org/data/2.5/forecast/daily?q=' + city + binaryAgent(binary));
 }
 
 function getZipData (city) {
-	return axios.get('https://api.openweathermap.org/data/2.5/forecast/daily?zip=' + city + binaryAgent(binary));
+	return axios.get('api.openweathermap.org/data/2.5/forecast/daily?zip=' + city + binaryAgent(binary));
 }
 
 function getF(temp) {
