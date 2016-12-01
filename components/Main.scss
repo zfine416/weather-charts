@@ -1,0 +1,38 @@
+.home-container {
+	height: calc(100vh - 4em);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.empty-fix {
+	height: 16em;
+}
+
+tspan {
+	font-size: 1.2em;
+}
+
+.CurrentWeather {
+	text-align: center;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	// margin-top: 2.5em; 
+}
+
+.pad-top {
+	margin-top: 1em;
+}
+
+.row {overflow: hidden;}
+
+.center {text-align:center;}
+
+@media (min-width: 600px) {
+  .mobile-display {
+    display: none;
+  }
+}
