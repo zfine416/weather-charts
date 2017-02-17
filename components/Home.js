@@ -6,7 +6,7 @@ function Home (props) {
 	return (
 		<div className="home-container">
 			<form 
-				className="center"
+				className="middle center"
 				onSubmit={props.onSubmitCity} >
 		          <input
 		          	onChange={props.onUpdateCity} 

@@ -1,38 +1,84 @@
-.home-container {
-	height: calc(100vh - 4em);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
+  margin: 0
 }
 
-.empty-fix {
-	height: 16em;
+.home-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.middle {
+	position: absolute;
+	top: 30%;
 }
 
 tspan {
 	font-size: 1.2em;
 }
 
-.CurrentWeather {
+#search {
+	padding: 1em 0;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.metric {
+	position:absolute;
+	bottom: 5px;
+	margin: 0 auto;
+	left: calc(50% - 60px);
+
+}
+
+.half {
+	width:40%;
+}
+
+.half > input {
 	text-align: center;
 }
+
+.display {font-size: 1.5em;}
 
 .button-container {
 	display: flex;
 	justify-content: center;
-	// margin-top: 2.5em; 
-}
-
-.pad-top {
-	margin-top: 1em;
 }
 
 .row {overflow: hidden;}
-
-.center {text-align:center;}
 
 @media (min-width: 600px) {
   .mobile-display {
     display: none;
   }
 }
+
+@media (min-width: 960px) {
+	.entry {
+    	float: left;
+    	width: 50%;
+	}	
+}
+
+#CurrentWeather, #NewCity {
+	min-height: 300px;
+}
+
+
+.entry {
+    text-align: center;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
